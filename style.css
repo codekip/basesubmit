@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600);
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  --gradient-one: hsl(0, 0%, 100%), hsl(0, 100%, 98%); /*- Linear, 135deg,*/
+  --gradient-two: hsl(0, 80%, 86%), hsl(0, 74%, 74%); /*- Linear, 135deg,*/
+
+  /*background-image: linear-gradient(45deg, var(--gradient-colors));*/
+}
+
+.container {
+  display: flex;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  margin-top: 0px;
+}
+.logo {
+  padding-bottom: 100px;
+}
+.text {
+  flex: 50%;
+  padding: 100px;
+  background-image: url("../images/bg-pattern-desktop.svg");
+}
+
+.hero:first-child {
+  margin-right: 20px;
+}
+
+.were {
+  font-weight: 300;
+  color: var(--desaturated-red);
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  margin-bottom: 0px;
+}
+.coming-soon {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: 12px;
+  margin-top: 0;
+}
+
+.input-outer {
+  position: relative;
+}
+
+.email {
+  height: 50px;
+  width: 100%;
+  padding-right: 100px;
+  border-radius: 30px;
+  display: relative;
+  border: 1px solid var(--dark-grayish-red);
+  padding: 10px 20px;
+}
+
+.button {
+  height: 50px;
+  width: 90px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  background-image: linear-gradient(135deg, var(--gradient-two));
+  border: 1px solid var(--soft-red);
+  position: absolute;
+  right: 1px;
+}
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+}
